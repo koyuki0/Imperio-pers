@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Imperio Aqueménida</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #d4af37 0%, #fff8dc 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .login-container {
+            background-color: #fefefe;
+            padding: 2em;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+            border: 3px solid #b99700;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #8b0000; /* rojo oscuro */
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 0.75em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f5e9;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 0.75em;
+            background-color: #8b0000; /* rojo persa */
+            color: #ffd700; /* dorado */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-container button:hover {
+            background-color: #004080; /* azul real */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form onsubmit="return irAlProyecto()">
+            <input type="text" placeholder="Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        function irAlProyecto() {
+            window.location.href = "Inicio.html";
+            return false;
+        }
+    </script>
+
+</body>
+</html>
